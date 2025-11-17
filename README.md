@@ -10,15 +10,15 @@
 
 ## 🔌 いどばた政策（policy-edit）との連携手順
 
-1. GitHub 上に `kaizenteian-bot` など任意のリポジトリを作成し、このディレクトリの内容を push します。
-2. `idobata` プロジェクトのルートで `.env.template` をコピーして `.env` を用意し、以下を設定します。
-   - `GITHUB_TARGET_OWNER`：上記で作成したリポジトリのオーナー名
-   - `GITHUB_TARGET_REPO`：上記で作成したリポジトリ名（例: `kaizenteian-bot`）
-   - `GITHUB_BASE_BRANCH`：改善提案のベースにするブランチ（通常は `main`）
-   - `OPENROUTER_API_KEY`、`GITHUB_APP_ID`、`GITHUB_INSTALLATION_ID` など policy-edit に必要な他の環境変数
-3. GitHub App の秘密鍵を `policy-edit/backend/secrets/github-key.pem` に配置します。
-4. `docker-compose up --build -d policy-backend policy-frontend postgres-policy` で policy-edit を起動します。
-5. ブラウザで `http://localhost:5174/view/README.md` を開き、`docs/higashi-osaka-interim-report.md` を選択して AI との対話を開始します。
+1. ~~GitHub 上に `kaizenteian-bot` など任意のリポジトリを作成し、このディレクトリの内容を push します。~~
+2. ~~`idobata` プロジェクトのルートで `.env.template` をコピーして `.env` を用意し、以下を設定します。~~
+   - ~~`GITHUB_TARGET_OWNER`：上記で作成したリポジトリのオーナー名~~
+   - ~~`GITHUB_TARGET_REPO`：上記で作成したリポジトリ名（例: `kaizenteian-bot`）~~
+   - ~~`GITHUB_BASE_BRANCH`：改善提案のベースにするブランチ（通常は `main`）~~
+   - ~~`OPENROUTER_API_KEY`、`GITHUB_APP_ID`、`GITHUB_INSTALLATION_ID` など policy-edit に必要な他の環境変数~~
+3. ~~GitHub App の秘密鍵を `policy-edit/backend/secrets/github-key.pem` に配置します。~~
+4. ~~`docker-compose up --build -d policy-backend policy-frontend postgres-policy` で policy-edit を起動します。~~
+5. ~~ブラウザで `http://localhost:5174/view/README.md` を開き、`docs/higashi-osaka-interim-report.md` を選択して AI との対話を開始します。~~
 
 ## 📦 新規リポジトリとして公開する手順例
 
